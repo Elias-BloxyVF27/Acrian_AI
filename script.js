@@ -2,7 +2,7 @@
 // Como o frontend e o backend são servidos pelo mesmo serviço Render, usamos rotas relativas.
 // Depois de publicar o backend no Render, substitua pela URL do seu serviço, sem barra no final.
 // Exemplo: const API = "https://acrian-chatbot.onrender.com";
-const API = "https://COLOQUE-A-URL-DO-SEU-RENDER.onrender.com";
+const API = "https://acrian-ai.onrender.com/";
 const mensagens = document.getElementById("mensagens");
 const formChat = document.getElementById("formChat");
 const input = document.getElementById("mensagemInput");
