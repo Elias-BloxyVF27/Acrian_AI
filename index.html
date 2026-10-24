@@ -16,14 +16,20 @@
           <img id="logoImagem" src="logo-acrian.png" alt="Logo da ACRIAN" onerror="this.style.display='none';document.getElementById('logoFallback').style.display='grid'">
           <span id="logoFallback">♻</span>
         </div>
-        <div><h1>ACRIAN <span>Assistente Virtual</span></h1><p><i class="online-dot"></i> Atendimento digital</p></div>
+        <div>
+          <h1>ACRIAN <span>Assistente Virtual</span></h1>
+          <p><i class="online-dot"></i> Atendimento digital</p>
+        </div>
       </div>
       <button class="icon-btn" id="limparChat" aria-label="Limpar conversa" title="Nova conversa">↻</button>
     </header>
 
     <section class="intro">
       <div class="intro-icon">🌱</div>
-      <div><h2>Olá! Como posso ajudar?</h2><p>Estou aqui para orientar sobre reciclagem, solicitações de coleta e parcerias com a ACRIAN.</p></div>
+      <div>
+        <h2>Olá! Como posso ajudar?</h2>
+        <p>Estou aqui para orientar sobre reciclagem, solicitações de coleta e parcerias com a ACRIAN.</p>
+      </div>
     </section>
 
     <nav class="quick-actions" aria-label="Atalhos">
@@ -35,19 +41,49 @@
     </nav>
 
     <section class="chat-panel">
-      <div class="chat-heading"><div><strong>Conversa</strong><small>As respostas da IA podem precisar de confirmação.</small></div><span class="status-pill">● Online</span></div>
-      <div id="mensagens" class="messages" aria-live="polite">
-        <article class="message bot"><div class="avatar">♻</div><div class="bubble">Seja bem-vindo(a)! Sou o assistente virtual informativo da ACRIAN. Posso ajudar com orientações gerais sobre reciclagem, registrar seu interesse em uma coleta ou parceria e explicar como funciona a triagem de materiais.<br><br>O que você gostaria de saber?</div></article>
+      <div class="chat-heading">
+        <div>
+          <strong>Conversa</strong>
+          <small>As respostas da IA podem precisar de confirmação.</small>
+        </div>
+        <span class="status-pill">● Online</span>
       </div>
+
+      <div id="mensagens" class="messages" aria-live="polite">
+        <article class="message bot">
+          <div class="avatar">♻</div>
+          <div class="bubble">Seja bem-vindo(a)! Sou o assistente virtual informativo da ACRIAN. Posso ajudar com orientações gerais sobre reciclagem, registrar seu interesse em uma coleta ou parceria e explicar como funciona a triagem de materiais.<br><br>O que você gostaria de saber?</div>
+        </article>
+      </div>
+
       <div id="atalhoForm" class="form-area" hidden></div>
+
       <form id="formChat" class="composer">
         <textarea id="mensagemInput" rows="1" maxlength="1800" placeholder="Escreva sua pergunta..." aria-label="Sua mensagem"></textarea>
         <button type="submit" id="enviarBtn" aria-label="Enviar mensagem">➤</button>
       </form>
+
       <p class="privacy-note">Não envie senhas, documentos pessoais ou informações sensíveis. Solicitações de coleta ficam pendentes até confirmação da associação.</p>
+
+      <p class="ai-disclaimer">
+        O assistente virtual da ACRIAN é uma IA e pode cometer erros. Verifique as respostas.
+      </p>
     </section>
-    <footer>ACRIAN • Alagoinhas, Bahia <span>Protótipo de extensão</span></footer>
+
+    <footer>
+      <p>ACRIAN • Alagoinhas, Bahia <span>Protótipo de extensão</span></p>
+      <p class="developer-credit">
+        Desenvolvido por:
+        <a href="https://www.instagram.com/elias_v.f.m"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Visitar Instagram do desenvolvedor">
+          @elias_v.f.m
+        </a>
+      </p>
+    </footer>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>
